@@ -1,10 +1,10 @@
 # Simple React To Do list app
 
 ## Features:
-Add a task
-Display task list
-Delete a task
-Edit/Update task(loading...)
+Add a task \
+Display task list \ 
+Delete a task \ 
+Edit/Update task(loading...) \ 
 
 # Getting Started with Create React App
 
