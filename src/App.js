@@ -4,6 +4,8 @@ import { useState } from 'react'
 function App() {
   const [newTask, setNewTask] = useState("");
   const [newList, setNewList] = useState([]);
+  const [editId, setEditId] = useState(-1);
+  const [updatedTask, setUpdatedTask] = useState("");
 
   function addTask() {
     if (!newList) {
@@ -20,10 +22,18 @@ function App() {
 
   function deleteTask(id) {
     const updatedList = newList.filter(
-      (task) => { return task.id != id }
+      (task) => { return task.id !== id }
     );
     setNewList(updatedList)
+  }
+  function editTask(id, newTask) {
 
+    newList.map((item) => {
+      return item.id === id ? (item.list = newTask) : null;
+    })
+    setNewList(newList);
+    setUpdatedTask("");
+    setEditId(-1);
   }
   return (
     <div className="App">
@@ -34,7 +44,15 @@ function App() {
       <ul className="taskList">
         {newList.map((item) => {
           return (
-            <li key={item.id}>{item.list} <button onClick={() => deleteTask(item.id)}>X</button></li>
+            <div>
+              <li key={item.id}>{item.list} <button onClick={() => deleteTask(item.id)}>❌</button> <button onClick={() => setEditId(item.id)}>✎</button></li>
+              {editId === item.id && (
+                <div key={item.id}>
+                  <input type="text" value={updatedTask} onChange={e => setUpdatedTask(e.target.value)} />
+                  <button onClick={() => editTask(item.id, updatedTask)}>Update</button>
+                </div>
+              )}
+            </div>
           )
         })}
       </ul>
