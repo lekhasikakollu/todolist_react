@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+input{
+  padding: 8px;
+  border-radius: 8px;
+  color: grey;
+}
+.add-button{
+  margin-left: 8px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.taskList{
+  list-style-type: none;
+}
+.taskList li{
+  padding:10px;
+}
+.taskList button{
+  margin-left:10px;
+  padding:0px 10px;
+  cursor: pointer;
+}
