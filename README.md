@@ -4,7 +4,7 @@
 * Add a task 
 * Display task list
 * Delete a task
-* Edit/Update task(loading...)
+* Edit/Update task
 
 # Getting Started with Create React App
 
