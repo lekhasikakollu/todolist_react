@@ -1,36 +1,16 @@
-# Simple React To Do list app
+### Simple React To Do list app
 
-### Features:
+## Features:
 * Add a task 
 * Display task list
 * Delete a task
 * Edit/Update task
 
-# Getting Started with Create React App
+## Get started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ - `npm install` - downloads the modules as per package.json to \node_modules folder
+ - `npm run build` - builds for production
+ - `npm run start`- starts dev server
+ - `npm run test` - locally previews production build
 
-## Available Scripts
-
-In the project directory, you can run:
-### `npm ci`
-
-Downloads the modules as per package.json to \node_modules folder
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## App screens
